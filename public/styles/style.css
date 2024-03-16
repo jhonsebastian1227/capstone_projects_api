@@ -1,0 +1,55 @@
+* {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1B3C73;
+}
+
+body {
+    background-color: #FFCAD4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #FF407D;
+    max-width: 31rem;
+    margin: 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #40679E;
+}
+
+input {
+    border-radius: 20px;
+    border: 0;
+    font-size: 1.5em;
+    padding: 10px;
+    color: #FF407D;
+    cursor: pointer;
+}
+
+input:active {
+    background: #40679E;
+}

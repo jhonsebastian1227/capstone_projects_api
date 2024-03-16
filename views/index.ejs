@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>Free advice</title>
+</head>
+<body>
+    <h1>Free advice</h1>
+    <% if (locals.advice) { %>
+        <h2>"<%= advice %>"</h2>
+        <h3>Click for more 👇🏻</h3>
+        <form action="/advice" method="POST">
+            <input type="submit" value="Advice" id="advice">
+        </form>
+    <% } else { %>
+        <h3>Click 👇🏻</h3>
+        <form action="/advice" method="POST">
+            <input type="submit" value="Advice" id="advice">
+        </form>
+    <% } %>
+</body>
+</html>
